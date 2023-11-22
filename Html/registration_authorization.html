@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/CSS/reset.css" />
+        <link rel="stylesheet" href="/CSS/registration_authorization.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__nav">
+                    <div class="header__logo">Логотип</div>
+                    <div class="header__item"><a href="">О_портале</a></div>
+                    <div class="header__item"><a href="">Карта</a></div>
+                    <div class="header__item"><a href="">Рейтинг</a></div>
+                    <div class="header__item"><a href="">Новости</a></div>
+                    <div class="header__search">
+                        <input
+                            type="text"
+                            class="problem-search"
+                            placeholder="Найти проблему"
+                        />
+                    </div>
+                    <div class="header__loginIn-box">
+                        <a href="" class="header__loginIn">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="container__Flex">
+                    <div class="main__reg-aut_btns">
+                        <button class="registration">Регистрация</button>
+                        <button class="authorization">Авторизация</button>
+                    </div>
+                    <form id="registrationForm" class="registrationForm">
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder="Введите имя пользователя"
+                        />
+                        <br />
+
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="Введите email"
+                        />
+                        <br />
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Пароль"
+                        />
+                        <br />
+                        <button type="submit">Зарегистрироваться</button>
+                    </form>
+                    <form id="loginForm">
+                        <input
+                            type="text"
+                            id="loginUsername"
+                            placeholder="Имя пользователя"
+                            required
+                        />
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Пароль"
+                            required
+                        />
+                        <button type="submit">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="/JavaScript/registration_authorization.js"></script>
+    </body>
+</html>

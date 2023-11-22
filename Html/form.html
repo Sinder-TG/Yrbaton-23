@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/CSS/reset.css" />
+        <link rel="stylesheet" href="/CSS/form.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__nav">
+                    <div class="header__logo">Логотип</div>
+                    <div class="header__item"><a href="">О_портале</a></div>
+                    <div class="header__item"><a href="">Карта</a></div>
+                    <div class="header__item"><a href="">Рейтинг</a></div>
+                    <div class="header__item"><a href="">Новости</a></div>
+                    <div class="header__search">
+                        <input
+                            type="text"
+                            class="problem-search"
+                            placeholder="Найти проблему"
+                        />
+                    </div>
+                    <div class="header__loginIn-box">
+                        <a
+                            href="/Html/registration_authorization.html"
+                            class="header__loginIn"
+                            >Войти</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="main__left">
+                    <div class="main__registration">
+                        <div class="main__reg-btn-box">
+                            <a
+                                class="main__reg-btn"
+                                href="/Html/registration_authorization.html"
+                                >Зарегистрироваться</a
+                            >
+                        </div>
+                        <div class="main__auth-btn-box">
+                            <a
+                                class="main__auth-btn"
+                                href="/Html/registration_authorization.html"
+                                >Авторизоваться</a
+                            >
+                        </div>
+                    </div>
+                    <div class="main__problems">
+                        <div class="main__problems_logo-label">
+                            <div class="main__problems_logo">
+                                <img src="" alt="" />
+                            </div>
+                            <div class="main__problems_label">
+                                <div class="main__problems_title">
+                                    <label for="problem__area"
+                                        >Опишите проблему</label
+                                    >
+                                </div>
+                                <div class="main__problems_subtitle">
+                                    Кратко опишите суть одной проблемы
+                                </div>
+                            </div>
+                        </div>
+                        <textarea
+                            name="problem"
+                            id="problem__area"
+                            cols="30"
+                            rows="10"
+                            placeholder="Текст проблемы"
+                        ></textarea>
+                    </div>
+                    <div class="main__photograph-category">
+                        <div class="main__photograph">
+                            <div class="main__photograph_logo-label">
+                                <div class="main__photograph_logo">
+                                    <img src="" alt="" />
+                                </div>
+                                <div class="main__photograph__label">
+                                    <div class="main__photograph_title">
+                                        Фотографии
+                                    </div>
+                                    <div class="main__photograph_subtitle">
+                                        До 5 Фотографий
+                                    </div>
+                                    <ul id="imgFilesList"></ul>
+                                </div>
+                            </div>
+                            <div class="main__photograph_btn-box">
+                                <!-- <a href="" class="main__photograph_btn">
+                                    Загрузить фотографию
+                                </a> -->
+                                <label
+                                    style="
+                                        justify-items: center;
+                                        cursor: pointer;
+                                    "
+                                    for="input__file"
+                                    >Загрузить фотографию
+                                </label>
+                                <input
+                                    name="input"
+                                    style="display: none"
+                                    id="input__file"
+                                    class="login-a1"
+                                    type="file"
+                                    value="Прикрепить скриншот .png / .jpg / .pdf"
+                                    multiple
+                                    accept="image/*"
+                                />
+                            </div>
+                        </div>
+                        <div class="main__category">
+                            <div class="main__category_logo-label">
+                                <div class="main__category_logo">
+                                    <img src="" alt="" />
+                                </div>
+                                <div class="main__category__label">
+                                    <div class="main__category_title">
+                                        Категория проблеммы
+                                    </div>
+                                    <div class="main__category_suptitle">
+                                        Выберите из списка
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__category_btn-box">
+                                <!-- <a class="button popup__link" href="#popup"
+            ><p>Сообщить о загрязнении</p></a
+        > -->
+                                <a
+                                    href="#popup"
+                                    class="main__category_btn popup__link"
+                                    >Список</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__right">
+                    <div class="main__map-box">
+                        <div class="main__map_logo-label">
+                            <div class="main__map_logo">
+                                <img src="" alt="" />
+                            </div>
+                            <div class="main__map_label">
+                                <div class="main__map_title">
+                                    Местоположение
+                                </div>
+                                <div class="main__map_suptitle">
+                                    Выберите точку на карте
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__map__address">
+                            <input
+                                type="text"
+                                placeholder="Город, Улица, дом"
+                                id="searchInput"
+                            />
+
+                            <div class="main__map__address_btn-box">
+                                <button
+                                    class="main__map__address_btn button__search-arddress"
+                                >
+                                    Искать
+                                </button>
+                            </div>
+                            <div
+                                id="searchResults"
+                                style="color: #ffffff"
+                            ></div>
+                        </div>
+                        <div class="main__map"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="popup" id="popup">
+            <div class="popup__body">
+                <div class="popup_box">
+                    <div class="popup__content">
+                        <a href="" class="popup__close close-popup">x</a>
+                        <div class="popup__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Iste asperiores natus ea veniam necessitatibus
+                            doloribus, architecto magnam saepe et eius ex/ Lorem
+                            ipsum dolor sit, amet consectetur adipisicing elit.
+                            Iste asperiores natus ea veniam necessitatibus
+                            doloribus, architecto magnam saepe et eius ex/ Lorem
+                            ipsum dolor sLorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Iste asperiores natus ea veniam
+                            necessitatibus doloribus, architecto magnam saepe et
+                            eius ex/ Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Iste asperiores natus ea veniam
+                            necessitatibus doloribus, architecto magnam saepe et
+                            eius ex/ Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Iste asperiores natus ea veniam
+                            necessitatibus doloribus, architecto magnam saepe et
+                            eius ex/ Lorem ipsum dolor sit, amet consectetur em
+                            ipsum dolor sit, amet consectetur adipisicing elit.
+                            Iste asperiores natus ea veniam necessitatibus
+                            doloribus, architecto magnam saepe et eius ex/
+                            <a class="button popup__link" href="#popup_2">
+                                Сообщить о загрязнении
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/JavaScript/popupWindow.js"></script>
+        <script src="/JavaScript/searchAdress.js"></script>
+    </body>
+</html>

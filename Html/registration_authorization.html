@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/CSS/reset.css" />
         <link rel="stylesheet" href="/CSS/registration_authorization.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css"
+            rel="stylesheet"
+        />
         <title>Document</title>
     </head>
     <body>
@@ -39,9 +43,9 @@
                     <form id="registrationForm" class="registrationForm">
                         <input
                             type="text"
-                            id="username"
-                            name="username"
-                            placeholder="Введите имя пользователя"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Введите ФИО"
                         />
                         <br />
 
@@ -49,7 +53,7 @@
                             type="text"
                             id="email"
                             name="email"
-                            placeholder="Введите email"
+                            placeholder="Введите почту"
                         />
                         <br />
 
@@ -64,22 +68,45 @@
                     </form>
                     <form id="loginForm">
                         <input
-                            type="text"
-                            id="loginUsername"
-                            placeholder="Имя пользователя"
+                            type="email"
+                            id="loginEmail"
+                            placeholder="Введите почту"
                             required
                         />
+                        <br />
                         <input
                             type="password"
                             id="loginPassword"
                             placeholder="Пароль"
                             required
                         />
+                        <br />
                         <button type="submit">Войти</button>
                     </form>
                 </div>
             </div>
         </main>
         <script src="/JavaScript/registration_authorization.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
+
+        <script>
+            $("#email").suggestions({
+                token: "3ee64e7edeea1353eed5038655d1808953f86ee7",
+                type: "EMAIL",
+                /* Вызывается, когда пользователь выбирает одну из подсказок */
+                onSelect: function (suggestion) {
+                    console.log(suggestion);
+                },
+            });
+            $("#fullname").suggestions({
+                token: "3ee64e7edeea1353eed5038655d1808953f86ee7",
+                type: "NAME",
+                /* Вызывается, когда пользователь выбирает одну из подсказок */
+                onSelect: function (suggestion) {
+                    console.log(suggestion);
+                },
+            });
+        </script>
     </body>
 </html>

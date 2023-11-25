@@ -203,10 +203,20 @@
             </div>
         </div>
         <script src="/JavaScript/popupWindow.js"></script>
-        <!-- <script src="/JavaScript/searchAdress.js"></script> -->
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
         <script src="/JavaScript/Dadata.js"></script>
         <script src="/JavaScript/imgFile.js"></script>
+        <script>
+            $("#address").suggestions({
+                token: "3ee64e7edeea1353eed5038655d1808953f86ee7",
+                type: "ADDRESS",
+                /* Вызывается, когда пользователь выбирает одну из подсказок */
+                onSelect: function (suggestion) {
+                    console.log(suggestion);
+                },
+            });
+        </script>
     </body>
 </html>

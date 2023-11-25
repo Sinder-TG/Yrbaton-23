@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/CSS/reset.css" />
+        <link rel="stylesheet" href="/CSS/personal_account.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__nav">
+                    <div class="header__logo">
+                        <img src="/Img/Point.png" alt="" />
+                        <p>Екатеринбург</p>
+                    </div>
+                    <div class="header__item"><a href="">Главная</a></div>
+                    <div class="header__item"><a href="">Карта</a></div>
+                    <div class="header__item"><a href="">Новости</a></div>
+                    <div class="header__item"><a href="">Обращения</a></div>
+                    <div class="header__item"><a href="">Опросы</a></div>
+                    <div class="header__item header__item-last">
+                        <a href="">О⠀портале</a>
+                    </div>
+                    <div class="header__loginIn-box">
+                        <a href="#popup1" class="header__loginIn popup__link"
+                            ><img src="/Img/Организация.png" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="main__title">Личный кабинет</div>
+                <div class="main__content">
+                    <div class="main__left">
+                        <div class="main__profile">
+                            <div class="main__profile__title">Профиль</div>
+                            <div class="main__profile__image"></div>
+                            <div class="main__profile__content">
+                                <div class="main__profile__userName">
+                                    Петров Павел
+                                </div>
+                                <div class="main__profile__contact">
+                                    <div class="main__profile__email">
+                                        <p>petrovpavel@mail.ru</p>
+                                        <a href="" class="change"> Изменить</a>
+                                    </div>
+
+                                    <div class="main__profile__address">
+                                        <p>Орджоникидзевский р-н</p>
+                                        <a href="" class="change"> Изменить</a>
+                                    </div>
+                                </div>
+                                <div class="main__profile__changePassword">
+                                    <a href=""> Сменить пароль</a>
+                                </div>
+                                <div class="main__profile__deleteProfile">
+                                    <a href=""> Удалить учетную запись</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__news">
+                            <div class="main__news__title">
+                                Обсуждение новостей
+                            </div>
+                            <div class="main__news__content">
+                                <label for="searchNews">Темы новостей</label>
+                                <input
+                                    type="text"
+                                    placeholder="Поиск"
+                                    id="searchNews"
+                                />
+                                <div class="main__news__cards">
+                                    <div class="main__news__item">
+                                        <div class="main__item__left">
+                                            <div class="main__item__name">
+                                                Вода
+                                            </div>
+                                            <div class="main__item__time">
+                                                16.11.23 в 19.20
+                                            </div>
+                                        </div>
+                                        <div class="main__item__right">
+                                            <div class="main__item__number">
+                                                32
+                                            </div>
+                                            <div class="main__item__respond">
+                                                Ответить
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main__news__item">
+                                        <div class="main__item__left">
+                                            <div class="main__item__name">
+                                                Освещение
+                                            </div>
+                                            <div class="main__item__time">
+                                                16.11.23 в 19.20
+                                            </div>
+                                        </div>
+                                        <div class="main__item__right">
+                                            <div class="main__item__number">
+                                                32
+                                            </div>
+                                            <div class="main__item__respond">
+                                                Ответить
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main__news__item">
+                                        <div class="main__item__left">
+                                            <div class="main__item__name">
+                                                Газ
+                                            </div>
+                                            <div class="main__item__time">
+                                                16.11.23 в 19.20
+                                            </div>
+                                        </div>
+                                        <div class="main__item__right">
+                                            <div class="main__item__number">
+                                                32
+                                            </div>
+                                            <div class="main__item__respond">
+                                                Ответить
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main__news__item">
+                                        <div class="main__item__left">
+                                            <div class="main__item__name">
+                                                Отопление
+                                            </div>
+                                            <div class="main__item__time">
+                                                16.11.23 в 19.20
+                                            </div>
+                                        </div>
+                                        <div class="main__item__right">
+                                            <div class="main__item__number">
+                                                32
+                                            </div>
+                                            <div class="main__item__respond">
+                                                Ответить
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__right">
+                        <div class="main__right__title">Обращения</div>
+                        <div class="main__right__content">
+                            <div class="main__right__conversations">
+                                <label
+                                    for="searchConversation"
+                                    class="main__right__conversations"
+                                    >Ваши обращения</label
+                                >
+                                <input type="text" id="searchConversations" />
+                                <div class="main__right__conversations__card">
+                                    <div
+                                        class="main__right__conversations__item"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="main__right__requisition">
+                                <label for="requisition"
+                                    >Заполните новую заявку на обращение</label
+                                >
+                                <textarea
+                                    name=""
+                                    id="requisition"
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Опишите кратко проблему"
+                                ></textarea>
+                            </div>
+                            <div class="main__right__searchAddress">
+                                <label for="searchAddress"
+                                    >Определите адрес</label
+                                >
+                                <div class="main__right__searchAddress_input">
+                                    <img src="/Img/geoPoint.svg" alt="" />
+                                    <input
+                                        type="text"
+                                        id="searchAddress"
+                                        placeholder="Малый переулок, д. 3 "
+                                    />
+                                </div>
+                            </div>
+                            <div class="main__right__map">Карта</div>
+                            <div class="main__right__addPhotos">
+                                <div class="main__right__addPhotos_title">
+                                    Добавьте фотографии
+                                </div>
+                                <div class="main__right__addPhotos_cards">
+                                    <div
+                                        class="main__right__addPhotos_item"
+                                    ></div>
+                                    <div
+                                        class="main__right__addPhotos_item"
+                                    ></div>
+                                    <div
+                                        class="main__right__addPhotos_item"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="main__right__button">
+                                <button type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">@ Команда “Бэкфрондиз”</footer>
+    </body>
+</html>

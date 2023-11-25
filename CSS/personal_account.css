@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+body {
+  font-family: Open Sans;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d4e1cf;
+  grid-area: header;
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  color: #222121;
+  /* Text */
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 45.736% 0 0;
+}
+.header__item {
+  margin: 0 3.05% 0 0;
+  display: block;
+  color: #222121;
+  /* Caption */
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.header__item-last {
+  text-decoration: none;
+  margin: 0 5.4158% 0 0;
+}
+.header__loginIn {
+  text-decoration: none;
+}
+
+.container {
+  width: 96.875%;
+  margin: auto;
+}
+
+.footer {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d4e1cf;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__profile {
+  width: 563px;
+  height: 494px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 4px;
+  border: 2px solid #222121;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__profile__title {
+  color: #222121;
+  text-align: center;
+  /* H2 */
+  font-family: Open Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 125% */
+  margin: 60px 0 20px 0;
+}
+.main__profile__image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: url(/Img/image\ 16.png), lightgray 50%/cover no-repeat;
+  border-radius: 50%;
+  background-image: no-repeat;
+  width: 106.773px;
+  height: 106.773px;
+  flex-shrink: 0;
+  margin: 0 0 20px 0;
+}
+.main__profile__content {
+  width: 490px;
+  margin: 0 auto;
+}
+.main__profile__userName {
+  color: #222121;
+  /* H3 */
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 150% */
+}
+.main__profile__email {
+  color: var(--, #222121);
+  /* Text */
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main__profile__address {
+  color: var(--, #222121);
+  /* Text */
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main__profile__changePassword {
+  color: var(--, #538443);
+  /* Caption */
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.main__profile__deleteProfile {
+  color: var(--, #538443);
+  /* Caption */
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.main__news__content {
+  width: 490px;
+}
+.change {
+  color: #538443;
+  /* Caption */
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
